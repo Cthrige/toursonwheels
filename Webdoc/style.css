@@ -177,3 +177,200 @@
    * See http://animista.net/license for more info. 
    * w: http://animista.net, t: @cssanimista
    * ---------------------------------------------- */
+
+   /* Scroll text over video */
+   /* For demo purposes only */
+article {
+    background-color: #fff;
+    height: 100vh;
+    padding: 1rem 2rem;
+}
+
+  
+  /* Code for fixed media with scrolling text over */
+  .Block {
+    background-color: #222;
+    color: #fff;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .Block-media {
+    height: 100%;
+    left: 0;
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+    .is-fixed {
+      clip: rect(0, auto, auto, 0);
+      max-height: none;
+    }
+  
+    .block .is-fixed {
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+  
+  .Block-content {
+    display: flex;
+    flex-direction: column;
+    /* Set where the text should be placed in its container */
+    justify-content: center;
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* Set max width for text over media */
+    max-width: 60rem;
+  
+    /* Adjust to set the distance between text slides */
+    min-height: 80vh;
+  
+    position: relative;
+    text-align: center;
+    width: calc(100% - 1.875rem);
+    z-index: 1;
+  }
+  
+  .Media .video .img {
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      vertical-align: top;
+      width: 100%;
+    }
+  
+  
+  /* Text styles for overlay text */
+  .h1-scrolltext {
+    color: #fff;
+    font-family: serif;
+    font-size: 15vmin;
+    font-style: italic;
+    line-height: 1.1;
+   
+    /* Adjust to set distance from title to next text slide */
+    margin-top: 50vh;
+  
+    text-align: center;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+
+/* Parallax */
+.para-container {
+    width: 100%;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+}
+
+.para-container h1 {
+    font-size: 4.5em;
+}
+
+.para-container h2 {
+    font-size: 6em;
+    color: #E2A107;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.para-container h3 {
+    font-size: 1.4em;
+    line-height: 0;
+    padding: 1em 0;
+}
+
+
+.bg {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2em 0;
+
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.para-container .ist {
+    background-image: url("/img/paralax1.jpg");
+}
+
+.para-container .pa {
+    background-image: url("/img/paralax.JPG");
+}
+
+.para-container .parallax {
+    width: 100%;
+    padding: 2em 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+
+
+
+/* Animation med uendelig kørestol kører */
+/* Hack to center the frame. */
+.wrapper {
+  height: 230px;
+  width: 1480px;
+  margin: 50px auto;
+}
+
+.hero-bkg-animated {
+  background: white url(https://cdn.zeplin.io/575e42daac0d28bb1ef8c6dd/assets/6228419A-63AA-406F-997D-3586529A1C76.png) repeat-x -50px 0;
+  background-size: 1867px 97px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 56px;
+  box-sizing: border-box;
+  -webkit-animation: slide 12s linear infinite;
+  animation: slide 12s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1867px 0; }
+}
+
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -1867px 0; }
+}
