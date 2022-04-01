@@ -16,7 +16,7 @@ function myFunction() {
 }
 
 
-
+/* Progess bar */
 const body = document.body;
 const documentElement = document.documentElement;
 const progressBarEl = document.getElementById('progressBar');
@@ -30,7 +30,6 @@ const handleOnScroll = () => {
 };
 
 window.addEventListener('scroll', handleOnScroll);
-
 
 
 /* Scroll content - slider ind fra siden */
