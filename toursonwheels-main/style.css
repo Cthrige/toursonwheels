@@ -1,5 +1,5 @@
 *{
-	margin:0 auto;
+	margin:0px;
 	padding:0px;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
@@ -23,6 +23,7 @@
     display: flex;
     background-color: #f8f8f8;
     display: flex;
+    flex-direction: colum;
   }
 
   .intropertekst{
@@ -136,6 +137,25 @@
     background-image:linear-gradient(#959b8d 0, #f8f8f8 100%);    
   }
   
+  .scroll-container:nth-of-type(5) {
+    background-image:linear-gradient(#f8f8f8 0, #959b8d 100%);    
+  }
+
+  .scroll-container:nth-of-type(6) {
+    background-image:linear-gradient(#959b8d 0, #f8f8f8 100%);    
+  }
+
+  .scroll-container:nth-of-type(7) {
+    background-image:linear-gradient(#f8f8f8 0, #959b8d 100%);
+  }
+  .scroll-container:nth-of-type(8) {
+    background-image:linear-gradient(#959b8d 0, #f8f8f8 100%);    
+  }
+  
+  .scroll-container:nth-of-type(9) {
+    background-image:linear-gradient(#f8f8f8 0, #959b8d 100%);
+  }
+
   .scroll-container:nth-of-type(even) {
     flex-direction: row-reverse;
   }
@@ -148,7 +168,9 @@
   .scroll-element {
     min-height: 300px;
     height: 100%;
-    background-color: #eaeaea;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .scroll-caption {
@@ -217,7 +239,7 @@
 
 .perbio{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 25px;
 }
 .perbio::first-letter{
@@ -229,17 +251,21 @@
 
 #danse{
   font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 50px;
   color: #E2A107;
   text-align: center;
+  font-size: 50px;
 }
+
 
 .perbio-dans{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 35px;
   text-align: center;
-
+  padding-top: 50px;
+  margin-left: 18%;
+  margin-right: 18%;
+  
 }
 .perbio-dans::first-letter{
   font-family: Arial, Helvetica, sans-serif;
@@ -249,24 +275,25 @@
 }
 
 .scroll-container-dans{
-  height: 90vh;
+  height: 70vh;
   min-height: 450px;
   padding: 2rem 1rem;
-  display: flex;
   align-items: center;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .percitat1{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
   text-align: end;
   line-height: 25px;
 }
 .percitat2{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-style: italic;
   text-align: start;
   padding-top: 60px;
@@ -286,6 +313,12 @@
   margin: 0 auto;
 }
 
+.perbiolille{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+}
+
 .lilletext:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -300,7 +333,7 @@
 .underlined {
   color: #E2A107;
   flex: 1;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 1.2;
   text-decoration: none;
   background-image: linear-gradient(to right, #959b8d 0, #E2A107 100%);
@@ -316,47 +349,20 @@
   background-position: 0 1px;
 }
 
+/* Intro tours */
 .introtours{
   height: 100vh;
   font-size: 30px;
   align-items: center;
   display: flex;
   background-color: #f8f8f8;
+  justify-content: center;
 }
 
 .introtourstekst{
   text-align: center;
-  margin-left: 100px;
   color:#E2A107;
 }
-
-.quizintro{
-  display: flex;
-  justify-content: center;
-  color:#E2A107;
-  font-size: 40px;
-}
-
-.quiz{
-  display: flex;
-  justify-content: center;
-  padding: 90px;
-}
-
-.quizknap{
-    width: 350px;
-    font-size: 30px;
-    padding: 20px;
-    border: none;
-    border-radius: 2px;
-    background: #959b8d;
-    color: #ffffff;
-    cursor: pointer;
-  }
-
-  a:link{
-    color: white;
-  }
 
 /* Parallax */
 .para-container {
@@ -461,6 +467,7 @@
 .card-container{
   display: flex;
   justify-content: center;
+  background-color: #959b8d;
 }
 
 .skråtekst{
@@ -534,17 +541,6 @@
   font-weight: 300;
   margin: 0 0 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Code for fixed media with scrolling text over */
@@ -625,3 +621,102 @@
 #førsteh3{
   margin-top: 40vh;
 }
+
+
+
+
+/* By artikel */
+.byartikel {
+  height:550px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 5rem;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  font-size: 25px;
+}
+
+.bycitat2 {
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Facts side */
+
+#h1fakta{
+  text-align: center;
+  color: #E2A107;
+  padding-bottom: 20px;
+}
+
+#cat-fact{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+#show-fact{
+  width: 16%;
+  margin-left: 42%;
+  margin-right: 42%;
+  font-size: 28px;
+  padding: 20px;
+  border: none;
+  border-radius: 2px;
+  background: #959b8d;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.faktacontainer{
+  height:200px;
+  padding-bottom: 60px;
+}
+
+
+/* Quiz */
+
+.quizintro{
+  display: flex;
+  justify-content: center;
+  color:#E2A107;
+  font-size: 40px;
+  padding-top: 200px;
+}
+
+.quiz{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.quizknap{
+    width: 350px;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    background: #959b8d;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:link{
+    color: white;
+  }
+
+  .footer{
+    color: #E2A107;
+    font-weight: 200;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
