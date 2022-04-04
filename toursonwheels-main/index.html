@@ -6,55 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheels On Tours</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
     <div id="progressBar"></div>
     <!-- The video -->
 
-<div class="main-container">
+    <div class="Block is-piecemeal">
+      <div class="Block-media is-fixed">
+        <div class="Media">
+          <!-- Image, video or plain background-color here -->
+          <video src="/img/Forsidefilm comp.mp4" autoplay loop></video>
+        </div>
+      </div>
+      <div class="Block-content">
+        <h3 class="h3forside" id="førsteh3">- Forestil dig at du løber rundt i haven</h3>
+      </div>
+      <div class="Block-content">
+        <h3 class="h3forside">- Du har store drømme og tænker på hvad i morgen vil bringe</h3>
+      </div>
+      <div class="Block-content">
+        <h3 class="h3forside">- Pludselig finder du dig selv i en helt anden hverdag</h3>
+      </div>
+      <div class="Block-content">
+        <h3 class="h3forside" id="sidsteh3">- Fra nu af skal livet leves fra en kørestol og de drømme du engang havde kan ikke længere findes</h3>
+      </div>  
+    </div>
+
+    <!-- Se mere video -->
+<!-- <div class="main-container">
     <video autoplay muted loop id="myVideo">
         <source src="img/wheelchair video.mp4" type="video/mp4">
     </video>
   
-  <!-- Optional: some overlay text to describe the video -->
-    <div class="content">
+  <!- Optional: some overlay text to describe the video -->
+    <!-- <div class="content"> -->
         <!-- Use a button to pause/play the video with JavaScript -->
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-    </div>
+      <!-- <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div> -->
 
-    <div class="content2">
+    <!-- <div class="content2">
         <h1 id="h1sag">Vi har alle en vigtig sag</h1>
     </div>
 
     <button id="sefilmen">Se Filmen</button> 
+</div> -->
+
+
+<div class="introper">
+  <p class="intropertekst">Her er historien om Per. <br><br>
+
+    Historien om en mand der drømte stort og pludselig blev frataget sig en af sine mest basale friheder. <br>
+     Friheden til at gå og bevæge sig frit rundt. <br><br>
+    
+    En historie om hvordan det er at leve i et samfund, der til tider ikke accepterer og tilgodeser kørestolsbrugere som ethvert andet menneske.  </p>
 </div>
-
-
-<!-- Video scroll med text-->
-<div class="Block is-piecemeal">
-    <div class="Block-media is-fixed">
-      <div class="Media">
-        <!-- Image, video or plain background-color here -->
-        <img src="//graphics.dbstatic.no/Grafikk/Reisen%20inn%20i%20demensen/Video/Intro/intro-landscape.jpg">
-      </div>
-    </div>
-    <div class="Block-content">
-      <h1 class="h1-scrolltext">Title of your story</h1>
-    </div>
-    <div class="Block-content">
-      <p>First sentence to get attention with.</p>
-    </div>
-    <div class="Block-content">
-      <p>Second sentence.</p>
-    </div>
-    <div class="Block-content">
-      <p>And maybe a third one.</p>
-    </div>  
-  </div>
-
-
-
 
     <!-- Scroll Elementer -->
 
@@ -63,15 +71,20 @@
             <img src="/img/per1.jpg" alt="office" width="100%" height="100%">
         </div>
         <div class="scroll-caption">
-            <h1 class="h1per">Hvem er per?</h1>
-            Per har altid været smilende, udadvendt og klar på livets rejse. Som ung drømte Per om en stor bil, et stort hus og rejser. Han var klar på at opleve verden. Hver dag drømte han om rejser til bjergene, hvor han ville være omgivet af smukke udsigter og forfriskende natur.
-            Det var lige indtil Per’s verden blev vendt op og ned. Lige indtil Per i 2014 fik af vide, at han resten af sit liv skulle sidde i kørestol. 
-            Egentlig var det en lettelse for ham, at få den besked -  for i 2000 fik Per overdraget beskeden om, at han led af den kroniske sygdom sklerose. På daværende tidspunkt var Per ikke klar over, hvad det ville sige og han havde ingen fornemmelse af hvad konsekvenserne var. Af samme årsag fortsatte Per derfor ufortrødent sine planer. 
+          <div class="wrap">
+            <h1 class="underlined underlined--thick">Mere end bare en kørestolsbruger</h1>
+          </div>
+            <p class="perbio"> Per har altid været smilende, udadvendt og klar på livets rejse. Som ung drømte Per om en stor bil, et stort hus og rejser. 
+              Han var klar på at opleve verden. Hver dag drømte han om rejser til bjergene, hvor han ville være omgivet af smukke udsigter og forfriskende natur.
+            <br><br>Det var lige indtil Per’s verden blev vendt op og ned. Lige indtil Per i 2014 fik af vide, at han resten af sit liv skulle sidde i kørestol.<br><br> 
+            Egentlig var det en lettelse for ham, at få den besked -  for i 2000 fik Per overdraget beskeden om, at han led af den kroniske sygdom sklerose. På daværende tidspunkt var Per ikke klar over, hvad det ville sige og han havde ingen fornemmelse af hvad konsekvenserne var. <br> Af samme årsag fortsatte Per derfor ufortrødent sine planer.
+            <br><br>
+            Det skulle dog vise sig, at Pers krop ikke kunne holde til det “gamle” liv, som han plejede at leve.</p>
             <br>
-            Det skulle dog vise sig, at Pers krop ikke kunne holde til det “gamle” liv, som han plejede at leve.
             <br>
             <br>
-            <p>“Jeg havde ingen fornemmelse af hvad konsekvenserne var, og fortsat derfor ufortrødent mine planer.”</p>
+            <br>
+            <p class="percitat1">“Jeg havde ingen fornemmelse af hvad konsekvenserne var, <br>og fortsat derfor ufortrødent mine planer.”</p>
         </div>
       </section>
     
@@ -80,10 +93,13 @@
             <img src="/billeder/repair.png" alt="office" width="100%" height="100%">
         </div>
         <div class="scroll-caption">
-            <h1 class="h1per">Store drømme</h1>
-            Per drømte nemlig ikke kun om en stor bil og et stort hus. Han havde altid vidst at han gerne ville uddanne sig til ingeniør og have sin egen virksomhed en dag. Da Per som ung sad på skolebænken i Aarhus og læste sin professionsbachelor i ingeniør, vidste han at han en dag skulle noget mere end bare det. Per havde efter sin skolegang flere forskellige ingeniørjobs og tog sideløbende en HD i organisation.
-            Per havde fået blod på tanden. Han startede derfor sin egen virksomhed, som blev hans sidste professionelle værk inden hans krop sagde fra.
+          <div class="wrap">
+            <h1 class="underlined underlined--thick">Store drømme</h1>
         </div>
+        <p class="perbio">Per drømte nemlig ikke kun om en stor bil og et stort hus. <br> Han havde altid vidst at han gerne ville uddanne sig til ingeniør og have sin egen virksomhed en dag. Da Per som ung sad på skolebænken i Aarhus og læste sin professionsbachelor i ingeniør, vidste han at han en dag skulle noget mere end bare det.<br> Per havde efter sin skolegang flere forskellige ingeniørjobs og tog sideløbende en HD i organisation.<br>
+        <br>
+        <p class="lilletext">Per havde fået blod på tanden.</p><br>Han startede derfor sin egen virksomhed, som blev hans sidste professionelle værk inden hans krop sagde fra.</p>
+    </div>
       </section>
     </div>
 
@@ -92,36 +108,41 @@
           <img src="/img/per1.jpg" alt="office" width="100%" height="100%">
       </div>
       <div class="scroll-caption">
-          <h1 class="h1per">Per og hans hobby</h1>
-          Selvom Pers krop ikke tillader ham det liv han engang levede, stopper det ikke Per. 
+        <div class="wrap">
+          <h1 class="underlined underlined--thick">Man kan stadig danse</h1>
+        </div>
+          <p class="perbio">Selvom Pers krop ikke tillader ham det liv han engang levede, stopper det ikke Per. <br>
           I dag bruger Per nemlig hans fritid på at gå til kørestolsdans og på at give folk et indblik i, hvad det vil sige at være kørestolsbruger i Aarhus. 
-          Per har de sidste 2 år været bestyrelsesmedlem i Tours On Wheel, hvor han er involveret i de udadvendte aktiviteter.          
+          <br>Per har de sidste 2 år været bestyrelsesmedlem i Tours On Wheel, hvor han er involveret i de udadvendte aktiviteter.</p>          
       </div>
     </section>
 
+    <div class="flex-container">
+      <div class="item1">
+        <img src="/img/per1.jpg" alt="">
+      </div>
+      <div class="item2">
+Selvom Pers krop ikke tillader ham det liv han engang levede, stopper det ikke Per. 
+I dag bruger Per nemlig hans fritid på at gå til kørestolsdans og på at give folk et indblik i, hvad det vil sige at være kørestolsbruger i Aarhus. 
+Per har de sidste 2 år været bestyrelsesmedlem i Tours On Wheel, hvor han er involveret i de udadvendte aktiviteter.
+      </div>
+      <div class="item3"></div>
+    </div>
 
-    <div class="para-container" id="top">
-
-        <div class="pa parallax" id="bg">
-            <div class="bg">
-                <h2>Danmark er bagud</h2>
-            </div>
+    <section class="scroll-container">
+      <div class="scroll-element js-scroll slide-left">
+          <img src="/img/per1.jpg" alt="office" width="100%" height="100%">
+      </div>
+      <div class="scroll-caption">
+        <div class="wrap">
+          <h1 class="underlined underlined--thick">Per med Tours On Wheels</h1>
         </div>
-    </div>
-
-    <div class="bycontent">
-        <h1>Danske byer er ikke egnet for alle</h1>
-        <h2>Det viser nye statistikker over bedste byer for handicappede</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, neque voluptas eius rerum est dolores ut dolorum tempore a repellendus quam pariatur natus consequatur doloribus id assumenda similique voluptatum quas provident quos, aspernatur ea quisquam distinctio! Expedita, blanditiis itaque laborum libero asperiores nisi, consequuntur in culpa vero id tempora alias!</p>
-        <h2>"Kørestolsbrugere skal kunne køre alle steder" Per</h2>
-    </div>
-
-
-    <div class="wrapper">
-        <div class="hero-bkg-animated">
-          <h1><img src="/img/kørestolanimation.png" width="50px" height="40px"></h1>
-        </div>
-    </div>
+          <p class="perbio">For 2 år siden startede Per i Tours On Wheels. Han sidder som bestyrelsesmedlem, hvor han er involveret i de udadvendte aktiviteter. 
+            Per tager gladeligt unge som gamle med ud på en lille køretur i Aarhus’, mindre kørestolsvenlige, gader. 
+            Per håber på, at de med arrangementer som Tours On Wheels kan få skabt et større fokus på de udfordringer, som kørestolsbrugere møder til dagligt i Aarhus. <br></p>
+            <p class="percitat2">"Jeg håber på, at de gående, der deltager i arrangementerne vil gå herfra med en viden og forståelse, der forhåbentlig kan få os kørestolsbrugere til at føle os set som mennesker fremfor “ham i kørestolen”.</p>          
+      </div>
+    </section>
 
     <div class="para-container" id="top">
 
@@ -141,6 +162,59 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos itaque ducimus eveniet magnam officiis nemo ut temporibus molestias adipisci maiores. Harum hic sint esse recusandae voluptas accusantium ipsa accusamus aut eligendi odit quia magni, labore a consequatur quos laudantium inventore exercitationem reprehenderit id quidem sapiente ea est. Cum, magni ullam!
         </div>
       </section>
+
+      <div class="card-container">
+      <figure class="snip1533">
+        <figcaption>
+          <blockquote>
+            <p class="skråtekst">Jeg havde aldrig i min vildeste fantasi forestillet mig hvor besværlig Aarhus egentlig er at færdes i, før jeg prøvede det her koncept</p>
+          </blockquote>
+          <h3>Christian Thrige</h3>
+          <h4>Studerende</h4>
+        </figcaption>
+      </figure>
+      <figure class="snip1533">
+        <figcaption class="fa-solid fa-quote-right">
+          <blockquote>
+            <p class="skråtekst">Det har givet mig rigtig meget indsigt i hvordan det føles, samt generelt et dybere indblik i hvordan de er at være kørestolsbruger</p>
+          </blockquote>
+          <h3>Andreas Handberg</h3>
+          <h4>Studerende</h4>
+        </figcaption>
+      </figure>
+      <figure class="snip1533">
+        <figcaption>
+          <blockquote>
+            <p class="skråtekst">Jeg synes det var spændende at se folk agerer omkring mig og mærke hvordan jeg selv gerne ville behandles hvis det var en fast ordning</p>
+          </blockquote>
+          <h3>Malte Krog</h3>
+          <h4>Studerende</h4>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="para-container" id="top">
+
+      <div class="pa parallax" id="bg">
+          <div class="bg">
+              <h2>Danmark er bagud</h2>
+          </div>
+      </div>
+  </div>
+
+  <div class="bycontent">
+      <h1>Danske byer er ikke egnet for alle</h1>
+      <h2>Det viser nye statistikker over bedste byer for handicappede</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, neque voluptas eius rerum est dolores ut dolorum tempore a repellendus quam pariatur natus consequatur doloribus id assumenda similique voluptatum quas provident quos, aspernatur ea quisquam distinctio! Expedita, blanditiis itaque laborum libero asperiores nisi, consequuntur in culpa vero id tempora alias!</p>
+      <h2>"Kørestolsbrugere skal kunne køre alle steder" Per</h2>
+  </div>
+
+
+  <div class="wrapper">
+      <div class="hero-bkg-animated">
+        <h1><img src="/img/kørestolanimation.png" width="50px" height="40px"></h1>
+      </div>
+  </div>
 
     
 
