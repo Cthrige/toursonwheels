@@ -1,5 +1,5 @@
 *{
-	margin:0px;
+	margin:0 auto;
 	padding:0px;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
@@ -23,7 +23,6 @@
     display: flex;
     background-color: #f8f8f8;
     display: flex;
-    flex-direction: colum;
   }
 
   .intropertekst{
@@ -130,11 +129,11 @@
     
   }
 
-  .scroll-container:nth-of-type(3) {
+  .scroll-container-dans:nth-of-type(3) {
     background-image:linear-gradient(#f8f8f8 0, #959b8d 100%);
   }
   .scroll-container:nth-of-type(4) {
-    background-image:linear-gradient(#f8f8f8 0, #959b8d 100%);    
+    background-image:linear-gradient(#959b8d 0, #f8f8f8 100%);    
   }
   
   .scroll-container:nth-of-type(even) {
@@ -228,6 +227,36 @@
   font-weight: bold;
 }
 
+#danse{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 50px;
+  color: #E2A107;
+  text-align: center;
+}
+
+.perbio-dans{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+
+}
+.perbio-dans::first-letter{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  color: #E2A107;
+  font-weight: bold;
+}
+
+.scroll-container-dans{
+  height: 90vh;
+  min-height: 450px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
 .percitat1{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -287,6 +316,47 @@
   background-position: 0 1px;
 }
 
+.introtours{
+  height: 100vh;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.introtourstekst{
+  text-align: center;
+  margin-left: 100px;
+  color:#E2A107;
+}
+
+.quizintro{
+  display: flex;
+  justify-content: center;
+  color:#E2A107;
+  font-size: 40px;
+}
+
+.quiz{
+  display: flex;
+  justify-content: center;
+  padding: 90px;
+}
+
+.quizknap{
+    width: 350px;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    background: #959b8d;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  a:link{
+    color: white;
+  }
 
 /* Parallax */
 .para-container {
@@ -555,5 +625,3 @@
 #førsteh3{
   margin-top: 40vh;
 }
-
-
